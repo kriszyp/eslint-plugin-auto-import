@@ -1,0 +1,20 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+  },
+  "globals": {
+    "_": false,
+    "$": false
+  },
+  "plugins": [
+    "auto-import"
+  ],
+  "rules": {
+    "auto-import/auto-import": [2, {
+      "foo": "C:/dir"
+    }]
+  }
+}
