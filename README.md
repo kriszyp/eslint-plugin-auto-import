@@ -59,15 +59,15 @@ If no module is found, the undefined variable (and warning) will be left in plac
 There are several parts of configuration that can be used to define the lookup of modules to satisfy undefined referneces:
 * `rootPath` - This defines the root path of where your modules that you are writing reside. The first thing this plugin will do to try to resolve a module, is it will search through the current directory, then the parent directory, then the children of the parent directory, then the grandparent directory, and so forth. If it finds a module with the same name as your undefined variable, it will import it using a relative path.
 * `packages` - These are packages and package modules that can be referenced. There are several types of packages that can be listed for resolution of undefined variables:
-** A String - If the package is simply a string, and the string matches the name of the variable, the package will be imported as the variable name. For example, if we specify "lodash": "_", and an undefined variable `_` is found in your code, auto-import will add:
+  * A String - If the package is simply a string, and the string matches the name of the variable, the package will be imported as the variable name. For example, if we specify "lodash": "_", and an undefined variable `_` is found in your code, auto-import will add:
 ```
 import _ from 'lodash'
 ```
-** An object with `modulesIn` - In this case it will search the given directory for modules that match the undefined variable name. This will result in an import like:
+  * An object with `modulesIn` - In this case it will search the given directory for modules that match the undefined variable name. This will result in an import like:
 ```
 import List from 'dgrid/List'
 ```
-** An object with `exports` - In this case it will load the module given by the value of the property, and look at all the exports of module for a match for the undefined variable name. This will result in an import like:
+  * An object with `exports` - In this case it will load the module given by the value of the property, and look at all the exports of module for a match for the undefined variable name. This will result in an import like:
 ```
 import { Div } from 'alkali'
 ```
