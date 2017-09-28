@@ -27,23 +27,25 @@ Add `auto-import` to the plugins section of your `.eslintrc` configuration file,
   "plugins": [
       "auto-import"
   ],
-  "auto-import/auto-import": [2, {
-    "rootPath": "./src",
-    "packages": {
-      "d3": "d3",
-      "bloodhound": "Bloodhound",
-      "moment": "moment",
-      "alkali": {
-        "hasExports": "module-path/to/alkali"
-      },
-      "dgrid": {
-        "modulesIn": "./bower_components/dgrid"
-      },
-      "dstore": {
-        "modulesIn": "./bower_components/dstore"
-      }
-    }
-  }]
+  "rules": {
+    "auto-import/auto-import": [2, {
+        "rootPath": "./src",
+        "packages": {
+          "d3": "d3",
+          "bloodhound": "Bloodhound",
+          "moment": "moment",
+          "alkali": {
+            "hasExports": "module-path/to/alkali"
+          },
+          "dgrid": {
+            "modulesIn": "./bower_components/dgrid"
+          },
+          "dstore": {
+            "modulesIn": "./bower_components/dstore"
+          }
+        }
+      }]
+  }
 }
 ```
 
