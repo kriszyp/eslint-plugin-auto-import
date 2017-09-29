@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-auto-import",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Automatically update imports",
   "keywords": [
     "eslint",
