@@ -13,7 +13,8 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "requireindex": "~1.1.0",
+    "ts-morph": "^9.1.0"
   },
   "devDependencies": {
     "eslint": "^4.7.2"
