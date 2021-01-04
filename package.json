@@ -8,6 +8,14 @@
     "eslint-plugin"
   ],
   "author": "Kris Zyp",
+  "homepage": "https://github.com/kriszyp/eslint-plugin-auto-import#readme",
+  "bugs": {
+    "url": "https://github.com/kriszyp/eslint-plugin-auto-import/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kriszyp/eslint-plugin-auto-import.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
